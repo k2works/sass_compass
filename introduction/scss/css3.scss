@@ -1,0 +1,57 @@
+@import "compass";
+
+// 角丸
+.box {
+  @include border-radius(10px 5px);
+}
+
+// box-shadow
+.box {
+  @include box-shadow();
+}
+
+// background-size
+.box {
+  @include background-size();
+}
+
+// background-clip
+.box {
+  @include background-clip();
+}
+
+// グラデーション
+.boxA {
+  @include background(linear-gradient(white, #a00));
+}
+.boxB {
+  @include background(radial-gradient(white, #b00));
+}
+.boxC {
+  @include background(linear-gradient(left,white,#c00));
+}
+.boxD {
+  @include background(linear-gradient(left top,white,#d00));
+}
+.boxE {
+  @include background(linear-gradient(white,green,#e00));
+}
+.boxF {
+  @include background(linear-gradient(white,green 40%,blue 60%, #f00));
+}
+.boxF-svg {
+  $experimental-support-for-svg: true;
+  @include background(linear-gradient(left, white, green 40%, blue 60%, #f00));
+}
+.boxG {
+  @include filter-gradient(#FFFFFF, #bb0000,horizontal);
+}
+// opacity
+.boxA {
+  @include opacity(0.8);
+}
+
+// inline-block
+.boxA {
+  @include inline-block;
+}
