@@ -61,7 +61,7 @@ SassフレームワークCompass詳細
         @import "compass";
 
 ## <a name="cha4">Compassのミックスインを使う ##
-+ [CSS3モジュール](scss/css3.scss)
++ [CSS3モジュール](introduction/scss/css3.scss)
 
 + Utilitiesモジュール
 
