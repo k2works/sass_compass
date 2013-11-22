@@ -98,7 +98,7 @@ SassフレームワークCompass詳細
 
 + [関数を組み合わせて使う](introduction/scss/css17.scss)
 
-+ sprite-map()関数で使えるミックスイン
++ [sprite-map()関数で使えるミックスイン](introduction/scss/css18.scss)
 
 # 参照 #
 
