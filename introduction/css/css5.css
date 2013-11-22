@@ -1,0 +1,100 @@
+* html {
+  font-size: 75%;
+}
+
+html {
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+* html {
+  font-size: 75%;
+}
+
+html {
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1em;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1em;
+}
+
+h2 {
+  margin-top: 1.5em;
+}
+
+h2 {
+  margin-top: 1.5em;
+}
+
+h2 {
+  margin-top: 3em;
+}
+
+h2 {
+  margin-top: 3em;
+}
+
+h3 {
+  padding-top: 3em;
+}
+
+h3 {
+  padding-top: 3em;
+}
+
+h4 {
+  margin-bottom: -0.75em;
+}
+
+h4 {
+  margin-bottom: -0.75em;
+}
+
+h5 {
+  padding-bottom: 4.5em;
+}
+
+h5 {
+  padding-bottom: 4.5em;
+}
+
+h6 {
+  margin-top: 0em;
+  padding-top: 1.5em;
+  padding-bottom: 3em;
+  margin-bottom: 4.5em;
+}
+
+h6 {
+  margin-top: 0em;
+  padding-top: 1.5em;
+  padding-bottom: 3em;
+  margin-bottom: 4.5em;
+}
+
+.boxA {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/text.png?1385089560');
+  background-repeat: no-repeat;
+  background-position: 5px 10px;
+}

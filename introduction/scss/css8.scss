@@ -1,0 +1,17 @@
+@imports "compass";
+
+// 画像のパスを補完する(URL Helpers)
+.boxA {
+  background-image: image-url("compass.png");
+  }
+
+// 画像サイズを取得する(Image Dimension Helpers)
+.boxB {
+  width: 400px;
+  height: 80px;
+  }
+
+// データURIスキームに変換する(Inline Data Helpers)
+.boxC {
+  background-image: inline-image("compass.png");
+  }

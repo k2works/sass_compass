@@ -1,0 +1,13 @@
+@imports "compass";
+.boxA {
+  background-image: url('../images/compass.png?1385091241');
+}
+
+.boxB {
+  width: 400px;
+  height: 80px;
+}
+
+.boxC {
+  background-image: url('data:image/png;base64,');
+}

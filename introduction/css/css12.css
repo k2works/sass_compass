@@ -1,0 +1,15 @@
+.map-sprite, .map-sprite1, .map-sprite2, .map-sprite3 {
+  background: url('../images/map-s4c4dc2efab.png') no-repeat;
+}
+
+.map-sprite1 {
+  background-position: 0 0;
+}
+
+.map-sprite2 {
+  background-position: 0 -540px;
+}
+
+.map-sprite3 {
+  background-position: 0 -1080px;
+}

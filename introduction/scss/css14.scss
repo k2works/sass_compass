@@ -1,0 +1,7 @@
+// :hover疑似クラス
+$map-spacing: 20px;
+@import "map/*.png";
+@include all-map-sprites;
+// マジックセレクタの設定変数
+$disable-magic-sprite-selectors: false;
+$sprite-selectors: hover, target, active;

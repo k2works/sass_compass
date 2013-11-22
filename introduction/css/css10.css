@@ -1,0 +1,27 @@
+h1, h2, h3, h4, h5, h6 {
+  color: red;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+h4, h5 {
+  font-weight: normal;
+}
+
+.one .two .three {
+  color: red;
+}
+
+.brother .child, .sistar .child {
+  font-weight: blod;
+}
+
+.foo a, .foo span, .bar a, .bar span {
+  font-weight: normal;
+}
+
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, mark, menu, meter, nav, output, progress, rp, rt, ruby, section, summary, time, video, wbr {
+  display: block;
+}

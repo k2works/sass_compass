@@ -1,0 +1,25 @@
+@import "compass";
+
+.boxC {
+  @include inline-block;
+
+  }
+
+$legacy-support-for-ie: false;
+$legacy-support-for-mozilla: false;
+.boxD {
+  @include inline-block;
+  }
+.boxC {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+
+.boxD {
+  display: inline-block;
+  vertical-align: middle;
+}

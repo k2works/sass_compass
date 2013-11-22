@@ -1,0 +1,53 @@
+// sprite-map()関数
+@import "compass";
+$map: sprite-map("map/*.png", $spacing: 20px, $layout: horizontal);
+
+// spriteミックスイン
+//背景を取得する
+.top1 {
+  @include sprite($map, top);
+}
+//引数でサイズ、背景位置をまとめて取得できる
+.top2 {
+  @include sprite($map, top, true, 100, 100);
+}
+.top1 {
+  background-position: -520px 0;
+}
+.top2 {
+  background-position: -420px 100px;
+  height: 32px;
+  width: 32px;
+}
+//sprite-dimensionsミックスイン
+//サイズを取得する
+.top3 {
+  @include sprite-dimensions($map, top);
+}
+top3 {
+  height: 32px;
+  width: 32px;
+}
+//sprite-background-positionミックスイン
+//背景位置を取得する（引数で位置を調整する）
+.top4 {
+  @include sprite-background-position($map, top, 100, 100);
+}
+.top4 {
+  background-position: -420px 100px;
+}
+//sprite-replace-textミックスイン
+//画像置換も書き込む（引数でサイズ、背景位置の調整ができる）
+.top5 {
+  @include sprite-replace-text($map, top, true);
+}
+.top5 {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-position: -520px 0;
+  height: 32px;
+  width: 32px;
+  background-image: url('../img/icon-s6d95478305.png');
+  background-repeat: no-repeat;
+}

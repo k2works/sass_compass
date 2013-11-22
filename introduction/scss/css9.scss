@@ -1,0 +1,26 @@
+@import "compass";
+
+$color:hsl(180, 50%, 50%);
+$amount: 25%;
+.color-helpers {
+  /* adjust-lightness */color: adjust-lightness($color, $amount);
+  /* adjust-saturation */color: adjust-saturation($color, $amount);
+  /* scale-lightness */color: scale-lightness($color, $amount);
+  /* scale-saturation */color: scale-saturation($color, $amount);
+  /* shade */color: shade($color, $amount);
+  /* tint */color: tint($color, $amount);
+  }
+.color-helpers {
+  /* adjust-lightness */
+  color: #9fdfdf;
+  /* adjust-saturation */
+  color: #20dfdf;
+  /* scale-lightness */
+  color: #70cfcf;
+  /* scale-saturation */
+  color: #30cfcf;
+  /* shade */
+  color: #308f8f;
+  /* tint */
+  color: #6fcfcf;
+}

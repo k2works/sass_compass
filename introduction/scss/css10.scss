@@ -1,0 +1,28 @@
+@import "compass";
+
+// headings()関数
+#{headings()} {
+  color: red;
+}
+#{headings(3)} {
+  font-weight: bold;
+}
+#{headings(4,5)} {
+  font-weight: normal;
+}
+
+// nest()関数
+#{nest(".one",".two",".three")}{
+  color: red;
+  }
+#{nest(".brother, .sistar",".child")} {
+  font-weight: blod;
+  }
+#{nest(".foo,.bar","a,span")}{
+  font-weight: normal;
+  }
+
+// elements-of-type()関数
+#{elements-of-type(html5)} {
+  display: block;
+  }

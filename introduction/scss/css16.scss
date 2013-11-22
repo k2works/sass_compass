@@ -1,0 +1,71 @@
+// sprite-map()関数
+@import "compass";
+$map: sprite-map("map/*.png", $spacing: 20px, $layout: horizontal);
+// sprite()関数
+.top {
+  background: sprite($map, top);
+}
+.top {
+  background: url('../img/icon-s6d95478305.png') -520px 0;
+}
+// sprite-url()関数
+.top {
+  background: sprite-url($map);
+}
+.top {
+  background: url('../img/icon-s6d95478305.png');
+}
+// sprite-path()関数
+.top {
+  background: url(sprite-path($map));
+}
+.top {
+  background: url(icon-s6d95478305.png);
+}
+// sprite-file()関数
+.top {
+  background: sprite-file($map, top);
+}
+.top {
+//  background: /Users/impress/compass-folder/img/map/top.png;
+}
+.top {
+  width: image-width(sprite-file($map, top));
+  height: image-height(sprite-file($map, top));
+}
+.top {
+  width: 32px;
+  height: 32px;
+}
+// sprite-position()関数
+.top {
+  background: sprite-position($map, top);
+}
+.top {
+  background: -520px 0;
+}
+.top {
+  background: sprite-position($map, top);
+  &:hover {
+    background: sprite-position($map, top_hover);
+  }
+}
+.top {
+  background: -520px 0;
+}
+.top:hover {
+  background: -572px 0;
+}
+.top {
+  background: nth(sprite-position($map, top), 1) nth(sprite-position($map, top), 2);
+}
+.top {
+  background: -520px 0;
+}
+// sprite-map-name()関数
+.top:after {
+  content: quote(sprite-map-name($map));
+}
+.top:after {
+  content: "icon";
+}

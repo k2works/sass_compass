@@ -1,0 +1,22 @@
+@import "compass";
+
+.boxA {
+  @include transition(width 2s linear 0.5s);
+  }
+
+$experimental-support-for-webkit: false;
+.boxB {
+  @include transition(width 2s linear 0.5s);
+  }
+.boxA {
+  -webkit-transition: width 2s linear;
+  -webkit-transition-delay: 0.5s;
+  -moz-transition: width 2s linear 0.5s;
+  -o-transition: width 2s linear 0.5s;
+  transition: width 2s linear 0.5s;
+}
+.boxB {
+    -moz-transition: width 2s linear 0.5s;
+    -o-transition: width 2s linear 0.5s;
+    transition: width 2s linear 0.5s;
+}

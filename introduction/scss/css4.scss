@@ -1,0 +1,101 @@
+@import "compass";
+
+// リンクカラー
+.boxA {
+  @include link-colors(#111,#222,#333,#444,#555);
+  }
+
+// clearfix
+.boxA {
+  @include clearfix;
+  }
+
+// インラインリスト
+// line-list
+
+.listA {
+  @include inline-list;
+  }
+.listA {
+    list-style-type: none;
+    }
+.listA, .listA li {
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}
+// line-block-list
+
+.listB {
+  @include inline-block-list;
+  }
+.listB {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+.listB li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  white-space: nowrap;
+
+}
+//inline-horizontal-list
+
+.listC {
+  @include horizontal-list;
+  }
+/* @include inline-horizontal-list */
+.listC {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+.listC li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+
+}
+.listC li:first-child, .listC li.first {
+  padding-left: 0;
+}
+.listC li:last-child {
+  padding-right: 0;
+}
+.listC li.last {
+  padding-right: 0;
+}
+
+// リストアイコン
+.listA {
+  @include pretty-bullets("arrow.png");
+  }
+.boxA {
+  @include min-width(100px);
+  }
+
+// 色の対比
+.boxA {
+  @include contrasted(#ccc);
+  }
+.boxB {
+  @include contrasted(#333);
+  }

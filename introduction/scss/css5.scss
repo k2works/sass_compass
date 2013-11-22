@@ -1,0 +1,88 @@
+@import "compass";
+
+// Vertical Rhythm
+$base-font-size : 16px;
+$base-line-height : 24px;
+//ベースフォントサイズ12px、ベースライン18pxで設定した場合
+$base-font-size : 12px;
+$base-line-height : 18px;
+
+@include establish-baseline;
+* html {
+    font-size: 75%;
+    }
+
+html {
+    font-size: 12px;
+    line-height: 1.5em;
+}
+// 見出しのフォントサイズを設定
+// 第一引数のみ指定した場合
+
+h1 {
+  @include adjust-font-size-to(36px);
+  }
+h1 {
+  font-size: 3em;
+  line-height: 1.5em;
+}
+// 第二引数まで指定した場合
+
+h1 {
+  @include adjust-font-size-to(36px, 2);
+  }
+h1 {
+    font-size: 3em;
+    line-height: 1em;
+}
+// 文字の上のスペースを設定
+// laderミックスイン
+h2 {
+  @include leader;
+  }
+h2 {
+    margin-top: 1.5em;
+    }
+h2 {
+  @include leader(2);
+  }
+h2 {
+    margin-top: 3em;
+    }
+// padding-leaderミックスイン
+h3 {
+  @include padding-leader(2);
+  }
+h3 {
+  @include padding-leader(2);
+  }
+// 文字の下のスペースを設定
+// trailerミックスイン
+h4 {
+  @include trailer(-0.5);
+  }
+h4 {
+    margin-bottom: -0.75em;
+    }
+// padding-trailerミックスイン
+h5 {
+  @include padding-trailer(3);
+  }
+h5 {
+    padding-bottom: 4.5em;
+    }
+// 上下のスペースを設定
+h6 {
+  @include rhythm(0, 1, 2, 3);
+  }
+h6 {
+  margin-top: 0em;
+  padding-top: 1.5em;
+  padding-bottom: 3em;
+  margin-bottom: 4.5em;
+  }
+
+// 画像置換
+.boxA {
+  @include replace-text("text.png",5px,10px);
+}

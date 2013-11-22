@@ -1,0 +1,22 @@
+// sprite-map()関数
+@import "compass";
+$map: sprite-map("map/*.png", $spacing: 20px, $layout: horizontal);
+
+@mixin sprite-bg($sprite) {
+  background: sprite-url($map) sprite-position($map, top) #{"/"} image-width(sprite-file($map, $sprite)) image-height(sprite-file($map,$sprite)) no-repeat;
+}
+.top {
+  @include sprite-bg(top);
+}
+.top {
+  background: url('../img/icon-s6d95478305.png') -520px 0 / 32px 32px no-repeat;
+}
+@mixin sprite-half($sprite) {
+  background: sprite-url($map) (nth(sprite-position($map, $sprite), 1)/2) (nth(sprite-position($map, $sprite), 2)/2) #{"/"} (image-width(sprite-file($map, $sprite))/2) (image-height(sprite-file($map,$sprite))/2) no-repeat;
+}
+.top {
+  @include sprite-half(top);
+}
+.top {
+  background: url('../img/icon-s6d95478305.png') -260px 0 / 16px 16px no-repeat;
+}

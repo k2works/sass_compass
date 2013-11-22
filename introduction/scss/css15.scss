@@ -1,0 +1,8 @@
+@import "map/*.png";
+// 背景位置、サイズをまとめて取得する
+//@include map-sprite(sprite1);
+// サイズを取得する
+//@include map-sprite-dimensions(sprite1);
+//幅・高さを別段に取得する
+$sp1: map-sprite-width(sprite1);
+$sp2: map-sprite-height(sprite2);

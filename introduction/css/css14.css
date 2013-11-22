@@ -1,0 +1,24 @@
+.map-sprite, .map-sprite1, .map-sprite2, .map-sprite3 {
+  background: url('../images/map-s7b4e01dc87.png') no-repeat;
+}
+
+.map-sprite1 {
+  background-position: 0 0;
+}
+.map-sprite1:hover, .map-sprite1.sprite1_hover, .map-sprite1.sprite1-hover {
+  background-position: 0 -560px;
+}
+
+.map-sprite2 {
+  background-position: 0 -1120px;
+}
+.map-sprite2:hover, .map-sprite2.sprite2_hover, .map-sprite2.sprite2-hover {
+  background-position: 0 -1680px;
+}
+
+.map-sprite3 {
+  background-position: 0 -2240px;
+}
+.map-sprite3:hover, .map-sprite3.sprite3_hover, .map-sprite3.sprite3-hover {
+  background-position: 0 -2800px;
+}
